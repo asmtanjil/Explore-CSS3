@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes shakingball {
+      0%{
+        background-color: tomato;
+        left:0;
+        top: -50px;
+        transform: scale(.5);
+      }
+      25%{
+        top: 350px;
+        background-color:forestgreen;
+      }
+      50%{
+        top: -50px;
+        background-color:goldenrod;
+      }
+      75%{
+        top: 350px;
+        background-color: red;
+      }
+      100%{
+        background-color: slateblue;
+        left: 700px;
+        top: -50px;
+      }
+    }
+    .stage{
+      width: 800px;
+      height: 400px;
+      background-color: lightskyblue;
+    }
+    .ball{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #242499;
+      animation: shakingball 2s ease-in-out .5s infinite alternate;
+      position: relative;
+      animation-play-state: running;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>This is my first annimation</h1>
+  <div class="stage">
+    <div class="ball"></div>
+  </div>
+</body>
+</html>
